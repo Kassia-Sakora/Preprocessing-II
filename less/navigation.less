@@ -7,6 +7,10 @@
     margin: 0 auto;
     padding-top: 2%;
     padding-bottom: 1%;
+
+    @media @mobile {
+        flex-direction: column;
+      }
 }
 
 .title {
@@ -18,6 +22,11 @@
     // border: 1px dotted #990000;
     font-size: 3.2rem;
     margin-right: 40%;
+
+    @media @mobile {
+        align-self: flex-start;
+        width: 100%;
+      }
     }
 
 a {
@@ -29,6 +38,9 @@ nav ul {
 	display: flex;
     font-size: 1.6rem;
     // border: 1px dashed #990000;
+    @media @mobile {
+        width: 100%;
+      }
 }
 
 nav ul li {
@@ -43,4 +55,5 @@ nav ul li:last-child {
 
 hr {
     border: .5px dashed gray;
+    margin: 0;
 }
